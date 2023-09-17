@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ## Starting the scraper
 You can start the scraper by typing the following command:<br/>
 ```
-py main.py
+python main.py
 ```
 
 ## Multithreading
