@@ -1,0 +1,14 @@
+Content-Length: 4437820
+Cache-Control: private
+Content-Type: application/json;charset=UTF-8
+Set-Cookie: INGRESSCOOKIE=1694954784.011.56562.21662|8399513e41ecce1d44448d4b3f4583f4; Path=/; Secure; HttpOnly
+X-Obiwan-Status: ok
+X-Obiwan-Request: GET https://ews-emea.api.bosch.com/customer/marketing/geolocator-limit/p/v1/SearchLocations/ByLocator/DE/3584?rad=10&geo=&format=json
+X-Obiwan-For: 94.236.155.8
+X-Content-Type-Options: nosniff
+X-Xss-Protection: 1; mode=block
+X-Frame-Options: SAMEORIGIN
+Strict-Transport-Security: max-age=15724800; includeSubDomainsmax-age=15724800; includeSubDomains
+X-Cache: CONFIG_NOCACHE
+X-Azure-Ref: 0HvUGZQAAAABTurKaK5ukRooUzCk3gpZtU09GMDFFREdFMDQwNgBiYjE4ZjZkZi00OGE2LTQ1NGUtODJhZS1jMGJlNmQ2NGM3MTU=
+Date: Sun, 17 Sep 2023 12:46:27 GMT

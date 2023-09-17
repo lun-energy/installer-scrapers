@@ -1,0 +1,497 @@
+
+<!DOCTYPE HTML>
+<html lang="de">
+    <head>
+    <meta charset="UTF-8"/>
+    <title>404 | Daikin</title>
+    
+    
+    <meta name="template" content="error-page"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+
+    
+    
+
+
+
+
+
+
+    
+<link rel="stylesheet" href="https://use.typekit.net/bkm1gwe.css"/>
+
+
+    
+    
+<link rel="stylesheet" href="/etc.clientlibs/b2c/clientlibs/core.lc-61e1f474009a3adcff6cc95dde2309a3-lc.min.css" type="text/css">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+
+
+
+
+    <meta property="og:title" content="404"/>
+    
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://www.daikinafrica.com/content/b2c/germany/de_de/fehler/404.html"/>
+    <meta property="og:locale" content="de_DE"/>
+    
+
+    <meta name="twitter:card" content="summary"/>
+    
+    
+    
+    
+    
+    <meta name="google-site-verification" content="BAZvF7diytNtxkGmNgq8IKjDcn86ndqJ_2IsPU6iwQM"/>          
+
+
+
+    <style>
+        .async-hide {
+            opacity: 0 !important;
+        }
+    </style>
+    <script>
+        ;(function (a, s, y, n, c, h, i, d, e) {
+            s.className += " " + y
+            h.end = i = function () {
+                s.className = s.className.replace(RegExp(" ?" + y), "")
+            }
+            ;(a[n] = a[n] || []).hide = h
+            setTimeout(function () {
+                i()
+                h.end = null
+            }, c)
+        })(window, document.documentElement, "async-hide", "dataLayer", 2000, {
+            'GTM\u002DNVSRQQW': true,
+        })
+    </script>
+    <script>
+        ;(function (w, d, s, l, i) {
+            w[l] = w[l] || []
+            w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != "dataLayer" ? "&l=" + l : ""
+            j.async = true
+            j.src = "//www.googletagmanager.com/gtm.js?id=" + i + dl
+            f.parentNode.insertBefore(j, f)
+        })(window, document, "script", "dataLayer", 'GTM\u002DNVSRQQW')
+    </script>
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    <script async src="/etc.clientlibs/core/wcm/components/commons/datalayer/v1/clientlibs/core.wcm.components.commons.datalayer.v1.lc-904d3c2f1e821ab45124d66de422b409-lc.min.js"></script>
+
+
+
+    
+    <link rel="icon" sizes="192x192" href="/etc.clientlibs/b2c/clientlibs/b2c-theme/resources/icon-192x192.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/etc.clientlibs/b2c/clientlibs/b2c-theme/resources/apple-touch-icon-180x180.png"/>
+    <link rel="apple-touch-icon" sizes="167x167" href="/etc.clientlibs/b2c/clientlibs/b2c-theme/resources/apple-touch-icon-167x167.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="/etc.clientlibs/b2c/clientlibs/b2c-theme/resources/apple-touch-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="/etc.clientlibs/b2c/clientlibs/b2c-theme/resources/apple-touch-icon-120x120.png"/>
+    <meta name="msapplication-square310x310logo" content="/etc.clientlibs/b2c/clientlibs/b2c-theme/resources/icon-310x310.png"/>
+    <meta name="msapplication-wide310x150logo" content="/etc.clientlibs/b2c/clientlibs/b2c-theme/resources/icon-310x150.png"/>
+    <meta name="msapplication-square150x150logo" content="/etc.clientlibs/b2c/clientlibs/b2c-theme/resources/icon-150x150.png"/>
+    <meta name="msapplication-square70x70logo" content="/etc.clientlibs/b2c/clientlibs/b2c-theme/resources/icon-70x70.png"/>
+
+    <link as="style" href="https://static-p42510-e167893.adobeaemcloud.com/45616e81976e3aae47fcccddab3953802f4ea7fe3eab9f3376451d1d4751a4a7/theme.css" rel="preload stylesheet" type="text/css">
+    <script src="https://static-p42510-e167893.adobeaemcloud.com/45616e81976e3aae47fcccddab3953802f4ea7fe3eab9f3376451d1d4751a4a7/theme.js" async type="text/javascript"></script>
+    
+</head>
+    <body class="page basicpage" id="page-423ee3095a" data-cmp-link-accessibility-enabled data-cmp-link-accessibility-text="wird in einer neuen Registerkarte geöffnet" data-cmp-data-layer-enabled>
+        <script>
+          window.adobeDataLayer = window.adobeDataLayer || [];
+          adobeDataLayer.push({
+              page: JSON.parse("{\x22page\u002D423ee3095a\x22:{\x22@type\x22:\x22b2c\/components\/b2c\/page\x22,\x22repo:modifyDate\x22:\x222023\u002D05\u002D22T07:09:25Z\x22,\x22dc:title\x22:\x22404\x22,\x22xdm:template\x22:\x22\/conf\/b2c\/settings\/wcm\/templates\/error\u002Dpage\x22,\x22xdm:language\x22:\x22de\u002DDE\x22,\x22xdm:tags\x22:[],\x22repo:path\x22:\x22\/content\/b2c\/germany\/de_de\/error\/404.html\x22}}"),
+              event:'cmp:show',
+              eventInfo: {
+                  path: 'page.page\u002D423ee3095a'
+              }
+          });
+        </script>
+        
+        
+            
+
+<div class="cmp-page__skiptomaincontent">
+    <a class="cmp-page__skiptomaincontent-link" href="#main-content">Zum Hauptinhalt wechseln</a>
+</div>
+
+    <link rel="stylesheet" href="/etc.clientlibs/core/wcm/components/page/v2/page/clientlibs/site/skiptomaincontent.lc-696ce9a06faa733b225ffb8c05f16db9-lc.min.css" type="text/css">
+
+
+
+            <noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-NVSRQQW" height="0" width="0" style="display: none; visibility: hidden"></iframe>
+</noscript>
+
+<svg class="svg-symbols" aria-hidden="true" focusable="false" style="display:none;">
+    <defs>
+        <symbol id="logo--daikin" viewBox="0 0 150 32">
+            <title id="logo--daikin__title">Daikin</title>
+            <path d="M34.1639 0.000247955H0.000976562V31.5188L34.1639 0.000247955Z" fill="#44C8F5"/>
+            <path d="M17.0792 2.95639e-05H0V15.7666L17.0792 2.95639e-05Z" fill="#231F20"/>
+            <path d="M81.8687 6.84127L77.4092 24.6711H85.2884L89.7442 6.84127H81.8687Z" fill="#00A0E4"/>
+            <path d="M63.8733 17.1751H62.0663L64.9797 12.0315L65.9247 17.1751H63.8733ZM62.7523 6.8395L52.6191 24.6685H57.8303L59.5123 21.6967H66.7466L67.2857 24.6685H74.9769L71.7078 6.8395H62.7523Z" fill="#00A0E4"/>
+            <path d="M117.851 6.84127L113.403 24.6711H121.281L125.729 6.84127H117.851Z" fill="#00A0E4"/>
+            <path d="M114.331 6.84127H106.257L99.499 12.6736L100.974 6.84127H93.4223L88.9746 24.6711H96.5026L98.0405 18.5159L102.066 24.6711H111.178L104.429 15.3334L114.331 6.84127Z" fill="#00A0E4"/>
+            <path d="M46.4368 14.9439C46.4368 14.9439 45.9251 20.7352 40.9904 20.7352H38.1983L40.6574 11.1184H43.1914C44.0981 11.1238 46.7224 11.3592 46.4368 14.9439ZM46.0373 6.84949L43.9996 6.8431H34.141L29.6934 24.6657H39.4826L43.3556 24.6711C48.8084 24.6711 54.1746 20.6121 54.1746 14.3948C54.1746 7.07935 46.0373 6.84949 46.0373 6.84949Z" fill="#00A0E4"/>
+            <path d="M144.546 6.83854L141.918 17.3374L138.418 6.83854H129.655L125.204 24.6711H130.652L133.306 14.0801L136.818 24.6711H145.542L150 6.83854H144.546Z" fill="#00A0E4"/>
+        </symbol>
+        <symbol id="logo--daikin-white" viewBox="0 0 150 33">
+            <title id="logo--daikin-white__title">Daikin</title>
+            <path d="M34.1639 0.518803H19L0.000976562 18.0002V32.0374L34.1639 0.518803Z" fill="white"/>
+            <path d="M17.0792 0.518584H0V16.2852L17.0792 0.518584Z" fill="white"/>
+            <path d="M81.8687 7.35983L77.4092 25.1897H85.2884L89.7442 7.35983H81.8687Z" fill="white"/>
+            <path d="M63.8733 17.6937H62.0663L64.9797 12.55L65.9247 17.6937H63.8733ZM62.7523 7.35806L52.6191 25.187H57.8303L59.5123 22.2152H66.7466L67.2857 25.187H74.9769L71.7078 7.35806H62.7523Z" fill="white"/>
+            <path d="M117.851 7.35983L113.403 25.1897H121.281L125.729 7.35983H117.851Z" fill="white"/>
+            <path d="M114.331 7.35983H106.257L99.499 13.1921L100.974 7.35983H93.4223L88.9746 25.1897H96.5026L98.0405 19.0345L102.066 25.1897H111.178L104.429 15.852L114.331 7.35983Z" fill="white"/>
+            <path d="M46.4368 15.4625C46.4368 15.4625 45.9251 21.2538 40.9904 21.2538H38.1983L40.6574 11.6369H43.1914C44.0981 11.6424 46.7224 11.8777 46.4368 15.4625ZM46.0373 7.36804L43.9996 7.36165H34.141L29.6934 25.1842H39.4826L43.3556 25.1897C48.8084 25.1897 54.1746 21.1306 54.1746 14.9134C54.1746 7.5979 46.0373 7.36804 46.0373 7.36804Z" fill="white"/>
+            <path d="M144.546 7.35709L141.918 17.856L138.418 7.35709H129.655L125.204 25.1897H130.652L133.306 14.5987L136.818 25.1897H145.542L150 7.35709H144.546Z" fill="white"/>
+        </symbol>
+    </defs>
+</svg>
+
+<div class="root container">
+
+    
+    
+    
+    <div id="container-f13995e309" class="cmp-container">
+        
+        <div class="navigation"><div id="navigation-a8f8a28688" data-cmp-data-layer="{&#34;navigation-a8f8a28688&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation&#34;}}">
+    <div class="navigation-bar js-navigation-bar js-navigation-bar-headroom-enabled">
+        <div class="navigation-segments">
+    <div class="container-max">
+        <div class="navigation-segments__content">
+            <nav>
+                <ul class="navigation-segments__menu">
+                    
+                        <li>
+                            <a class="navigation-segments__link navigation-segments__link-segment " data-segment-name="Privatkunden" data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-privatkunden-2ded2940cf&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Privatkunden&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikin.de/de_de/privatkunden.html&#34;}}" href="/de_de/privatkunden.html">
+                                Privatkunden </a>
+                        </li>
+                    
+                        <li>
+                            <a class="navigation-segments__link navigation-segments__link-segment " data-segment-name="Gewerblich" data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-gewerblich-9b08bf05c6&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Gewerblich&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikin.de/de_de/commercial.html&#34;}}" href="https://www.daikin.de/de_de/commercial.html">
+                                Gewerblich </a>
+                        </li>
+                    
+                        <li>
+                            <a class="navigation-segments__link navigation-segments__link-segment " data-segment-name="Industriell" data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-industriell-9aa5c5756d&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Industriell&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikin.de/de_de/industrial.html&#34;}}" href="https://www.daikin.de/de_de/industrial.html">
+                                Industriell </a>
+                        </li>
+                    
+                        <li>
+                            <a class="navigation-segments__link navigation-segments__link-segment " data-segment-name="Partner" data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-partner-09256ff889&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Partner&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikin.de/de_de/installateure.html&#34;}}" href="https://www.daikin.de/de_de/installateure.html">
+                                Partner </a>
+                        </li>
+                    
+                        <li>
+                            <a class="navigation-segments__link navigation-segments__link-segment " data-segment-name="Karriere" data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-karriere-ca4f77cc5f&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Karriere&#34;,&#34;xdm:linkURL&#34;:&#34;https://careers.daikin.eu/dag/?locale=de_DE&amp;utm_source=careersite&amp;utm_campaign=DAG&#34;}}" href="https://careers.daikin.eu/dag/?locale=de_DE&utm_source=careersite&utm_campaign=DAG">
+                                Karriere </a>
+                        </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+        <div class="navigation-topmenu">
+    <div class="container-max">
+        <div class="navigation-topmenu__content">
+            <a class="navigation-topmenu__brand" aria-label="Daikin" data-cmp-clickable data-cmp-data-layer="{&#34;navigation-a8f8a28688-logo-f6f8b20a05&#34;:{&#34;parentId&#34;:&#34;navigation-a8f8a28688&#34;,&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Daikin Logo&#34;}}">
+                <svg focusable="false" role="img" aria-labelledby="logo--daikin__title" class="logo logo--daikin">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo--daikin"></use>
+                </svg>
+            </a>
+            <nav class="navigation-topmenu__menu">
+                <ul class="navigation-topmenu__menu-items">
+                    
+                </ul>
+            </nav>
+            <div class="navigation-topmenu__container-right">
+                
+                <div class="navigation-topmenu__item navigation-topmenu__item--hamburger navigation-topmenu__button-container">
+                    <a class="navigation-topmenu__button navigation-topmenu__button--hamburger js-navigation-topmenu" href="#mobile-menu" data-cmp-clickable data-cmp-data-layer="{&#34;navigation-a8f8a28688-mobile-navigation-hamburger-button-f6f8b20a05&#34;:{&#34;parentId&#34;:&#34;navigation-a8f8a28688&#34;,&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Mobile navigation&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikinafrica.com/content/b2c/germany/de_de/fehler/404.html#mobile-menu&#34;}}" aria-expanded="false">
+                        <span class="visually-hidden">Navigation ein-/ausblenden</span>
+                        <span class="navigation-bar__icon navigation-topmenu__hamburger-icon"></span>
+                        <span class="navigation-bar__icon navigation-topmenu__hamburger-icon--close"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <nav class="navigation-mobile js-navigation-mobile" aria-hidden="true">
+    <div class="navigation-mobile__content">
+        <ul class="navigation-mobile__menu js-navigation-mobile-menu" id="mobile-menu" aria-hidden="false">
+            
+            
+            
+            <li class="navigation-mobile__item navigation-mobile__item--segments">
+                <a href="#segments" data-cmp-clickable data-cmp-data-layer="{&#34;navigation-a8f8a28688-change-site-f6f8b20a05&#34;:{&#34;parentId&#34;:&#34;navigation-a8f8a28688&#34;,&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Seite wechseln&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikinafrica.com/content/b2c/germany/de_de/fehler/404.html#segments&#34;}}" class="navigation-mobile__link navigation-mobile__link navigation-mobile__link--chevron js-navigation-mobile-link">
+                    <span>Seite wechseln</span>
+                </a>
+            </li>
+        </ul>
+        
+        
+        
+        
+        
+        <div class="navigation-mobile__menu js-navigation-mobile-menu" id="segments" aria-labelledby="Seite wechseln" aria-hidden="true">
+            
+            <ul class="navigation-mobile__list">
+                <li class="navigation-mobile__item">
+                    <a data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-privatkunden-2ded2940cf&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Privatkunden&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikin.de/de_de/privatkunden.html&#34;}}" class="navigation-mobile__link js-navigation-mobile-link " href="/de_de/privatkunden.html">Privatkunden</a>
+                </li>
+            
+                <li class="navigation-mobile__item">
+                    <a data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-gewerblich-9b08bf05c6&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Gewerblich&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikin.de/de_de/commercial.html&#34;}}" class="navigation-mobile__link js-navigation-mobile-link " href="https://www.daikin.de/de_de/commercial.html">Gewerblich</a>
+                </li>
+            
+                <li class="navigation-mobile__item">
+                    <a data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-industriell-9aa5c5756d&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Industriell&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikin.de/de_de/industrial.html&#34;}}" class="navigation-mobile__link js-navigation-mobile-link " href="https://www.daikin.de/de_de/industrial.html">Industriell</a>
+                </li>
+            
+                <li class="navigation-mobile__item">
+                    <a data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-partner-09256ff889&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Partner&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikin.de/de_de/installateure.html&#34;}}" class="navigation-mobile__link js-navigation-mobile-link " href="https://www.daikin.de/de_de/installateure.html">Partner</a>
+                </li>
+            
+                <li class="navigation-mobile__item">
+                    <a data-cmp-clickable data-cmp-data-layer="{&#34;top-navigation-segment-item-karriere-ca4f77cc5f&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Karriere&#34;,&#34;xdm:linkURL&#34;:&#34;https://careers.daikin.eu/dag/?locale=de_DE&amp;utm_source=careersite&amp;utm_campaign=DAG&#34;}}" class="navigation-mobile__link js-navigation-mobile-link " href="https://careers.daikin.eu/dag/?locale=de_DE&utm_source=careersite&utm_campaign=DAG">Karriere</a>
+                </li>
+            </ul>
+            
+            <div class="navigation-mobile__back-link">
+                <a href="#mobile-menu" data-cmp-clickable data-cmp-data-layer="{&#34;navigation-a8f8a28688-back-button-first-level-f6f8b20a05&#34;:{&#34;parentId&#34;:&#34;navigation-a8f8a28688&#34;,&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Zurück&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.daikinafrica.com/content/b2c/germany/de_de/fehler/404.html#mobile-menu&#34;}}" class="navigation-mobile__link navigation-mobile__link--arrow js-navigation-mobile-back-link">
+                    <span aria-hidden="true">Zurück</span>
+                    <span class="visually-hidden">Zurück zu Seite wechseln</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    </div>
+    <div id="b2c-modal-navigation-submenu" class="modal modal--navigation" aria-labelledby="navigation-submenu-title" aria-hidden="true">
+    <div class="modal__overlay" data-a11y-dialog-hide></div>
+    <div class="modal__wrapper" role="document">
+        <header class="modal__header">
+            <span id="navigation-submenu-title" class="modal__title">Navigation</span>
+            <button data-a11y-dialog-hide class="modal__close" data-cmp-clickable data-cmp-data-layer="{&#34;navigation-a8f8a28688-close-button-f6f8b20a05&#34;:{&#34;parentId&#34;:&#34;navigation-a8f8a28688&#34;,&#34;@type&#34;:&#34;b2c/components/b2c/navigation/button&#34;,&#34;dc:title&#34;:&#34;Close navigation&#34;}}" aria-label="Schließen"></button>
+        </header>
+        <div class="modal__content" id="b2c-modal-navigation-submenu-content">
+            <nav class="navigation-submenu js-navigation-submenu">
+                
+                
+                
+                
+            </nav>
+        </div>
+    </div>
+</div>
+
+</div>
+
+</div>
+<main class="container container-content">
+
+    
+    
+    
+    <div id="main-content" class="cmp-container">
+        
+        <div class="standard-header background--color-grey"><div class="cmp-standard-header" id="standard-header-d9573bbdb8" data-cmp-data-layer="{&#34;standard-header-d9573bbdb8&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/standard-header-composite/standard-header&#34;}}">
+    <div class="to-parent-link">
+
+    
+
+</div>
+
+    <div class="title">
+<div data-cmp-data-layer="{&#34;title-34930fbd9f&#34;:{&#34;@type&#34;:&#34;core/wcm/components/title/v3/title&#34;,&#34;dc:title&#34;:&#34;Hoppla! Diese Seite hat wohl der Wind verweht ...&#34;}}" id="title-34930fbd9f" class="cmp-title">
+    <h1 class="cmp-title__text">Hoppla! Diese Seite hat wohl der Wind verweht ...</h1>
+</div>
+
+    
+
+</div>
+
+    <div class="cmp-standard-header__content">
+        <div class="description text cmp-standard-header__description">
+
+
+    
+
+</div>
+
+        <div class="primary-button button has-button cmp-standard-header__button cmp-standard-header__button--primary">
+    
+
+    
+
+
+
+    
+
+</div>
+
+        <div class="secondary-button button cmp-standard-header__button cmp-standard-header__button--secondary has-button has-button--style-white">
+    
+
+    
+
+
+
+    
+
+</div>
+
+    </div>
+    <div class="cmp-standard-header__media container-bleed">
+        <div class="cmp-standard-header__image">
+            <div class="image"><div data-asset-id="2a7e701d-372e-474a-a599-68de9d298872" id="image-84de2269f0" data-cmp-data-layer="{&#34;image-84de2269f0&#34;:{&#34;@type&#34;:&#34;b2c/components/core/image&#34;,&#34;repo:modifyDate&#34;:&#34;2023-05-22T07:09:25Z&#34;,&#34;image&#34;:{&#34;repo:id&#34;:&#34;2a7e701d-372e-474a-a599-68de9d298872&#34;,&#34;repo:modifyDate&#34;:&#34;2023-03-24T07:48:11Z&#34;,&#34;@type&#34;:&#34;image/png&#34;,&#34;repo:path&#34;:&#34;/content/dam/b2c/shared/images/404_NoPage.png&#34;,&#34;xdm:tags&#34;:[&#34;year:2023&#34;],&#34;xdm:smartTags&#34;:{&#34;symbol&#34;:0.5890509486198425,&#34;concept&#34;:0.5937093496322632,&#34;sign&#34;:0.5661534667015076,&#34;icon&#34;:0.5543743968009949,&#34;pattern&#34;:0.5251628160476685,&#34;red&#34;:0.5389291048049927,&#34;world&#34;:0.5589401721954346,&#34;white&#34;:0.5254359841346741,&#34;design&#34;:0.6620110273361206,&#34;drawing&#34;:0.538711667060852,&#34;vector&#34;:0.6433862447738647,&#34;art&#34;:0.5588887929916382,&#34;business&#34;:0.6253238916397095,&#34;black&#34;:0.6369251608848572,&#34;abstract&#34;:0.6177756786346436,&#34;label&#34;:0.5646355748176575,&#34;collection&#34;:0.5451590418815613,&#34;technology&#34;:0.5302043557167053,&#34;globe&#34;:0.5339011549949646,&#34;background&#34;:0.6427116394042969,&#34;vintage&#34;:0.5354283452033997,&#34;earth&#34;:0.5345998406410217,&#34;illustration&#34;:0.5787854790687561,&#34;circle&#34;:0.5298517942428589,&#34;card&#34;:0.5302585363388062}}}}" class="cmp-image " itemscope itemtype="http://schema.org/ImageObject">
+    
+        <img srcset="/adobe/dynamicmedia/deliver/dm-aid--2a7e701d-372e-474a-a599-68de9d298872/404-nopage.png?preferwebp=true&amp;quality=90&amp;width=327 327w,/adobe/dynamicmedia/deliver/dm-aid--2a7e701d-372e-474a-a599-68de9d298872/404-nopage.png?preferwebp=true&amp;quality=90&amp;width=786 786w,/adobe/dynamicmedia/deliver/dm-aid--2a7e701d-372e-474a-a599-68de9d298872/404-nopage.png?preferwebp=true&amp;quality=90&amp;width=1098 1098w,/adobe/dynamicmedia/deliver/dm-aid--2a7e701d-372e-474a-a599-68de9d298872/404-nopage.png?preferwebp=true&amp;quality=90&amp;width=1344 1344w" src="/adobe/dynamicmedia/deliver/dm-aid--2a7e701d-372e-474a-a599-68de9d298872/404-nopage.png?preferwebp=true&quality=90" loading="lazy" class="cmp-image__image" itemprop="contentUrl" width="8000" height="4500" alt="Seite entfernt"/>
+    
+    
+    
+</div>
+
+    
+
+</div>
+
+        </div>
+        
+    </div>
+</div>
+</div>
+
+        
+    </div>
+
+</main>
+<div class="doormat container-content"><div class="container">
+    <svg focusable="false" role="img" aria-labelledby="logo--daikin__title" class="logo logo--daikin">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo--daikin-white"></use>
+    </svg>
+    
+</div>
+</div>
+<div class="footer container-content"><footer class="footer-block">
+    <div class="footer-block__content container">
+        <div class="footer-block__rating"></div>
+        <div class="footer-block__social-links">
+            <ul class="footer-block__social-links-list">
+                <li class="footer-block__social-link">
+                    <a class="social-icon social-icon--facebook" data-cmp-clickable data-cmp-data-layer="{&#34;Facebook-f6f8b20a05&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/footer/button&#34;,&#34;dc:title&#34;:&#34;Facebook&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.facebook.com/daikin.germany&#34;}}" id="Facebook" href="https://www.facebook.com/daikin.germany" target="_blank">
+                        <span class="visually-hidden">Facebook</span>
+                    </a>
+                </li>
+            
+                <li class="footer-block__social-link">
+                    <a class="social-icon social-icon--instagram" data-cmp-clickable data-cmp-data-layer="{&#34;Instagram-f6f8b20a05&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/footer/button&#34;,&#34;dc:title&#34;:&#34;Instagram&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.instagram.com/daikin_germany/&#34;}}" id="Instagram" href="https://www.instagram.com/daikin_germany/" target="_blank">
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                </li>
+            
+                <li class="footer-block__social-link">
+                    <a class="social-icon social-icon--pinterest" data-cmp-clickable data-cmp-data-layer="{&#34;Pinterest-f6f8b20a05&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/footer/button&#34;,&#34;dc:title&#34;:&#34;Pinterest&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.pinterest.de/daikingermany/&#34;}}" id="Pinterest" href="https://www.pinterest.de/daikingermany/" target="_blank">
+                        <span class="visually-hidden">Pinterest</span>
+                    </a>
+                </li>
+            
+                <li class="footer-block__social-link">
+                    <a class="social-icon social-icon--linkedin" data-cmp-clickable data-cmp-data-layer="{&#34;Linkedin-f6f8b20a05&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/footer/button&#34;,&#34;dc:title&#34;:&#34;Linkedin&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.linkedin.com/company/daikin-airconditioning-germany-gmbh&#34;}}" id="Linkedin" href="https://www.linkedin.com/company/daikin-airconditioning-germany-gmbh" target="_blank">
+                        <span class="visually-hidden">Linkedin</span>
+                    </a>
+                </li>
+            
+                <li class="footer-block__social-link">
+                    <a class="social-icon social-icon--youtube" data-cmp-clickable data-cmp-data-layer="{&#34;YouTube-f6f8b20a05&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/footer/button&#34;,&#34;dc:title&#34;:&#34;YouTube&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.youtube.com/c/daikingermany&#34;}}" id="YouTube" href="https://www.youtube.com/c/daikingermany" target="_blank">
+                        <span class="visually-hidden">YouTube</span>
+                    </a>
+                </li>
+            
+                <li class="footer-block__social-link">
+                    <a class="social-icon social-icon--xing" data-cmp-clickable data-cmp-data-layer="{&#34;Xing-f6f8b20a05&#34;:{&#34;@type&#34;:&#34;b2c/components/b2c/footer/button&#34;,&#34;dc:title&#34;:&#34;Xing&#34;,&#34;xdm:linkURL&#34;:&#34;https://www.xing.com/pages/daikinairconditioninggermanygmbh&#34;}}" id="Xing" href="https://www.xing.com/pages/daikinairconditioninggermanygmbh" target="_blank">
+                        <span class="visually-hidden">Xing</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</div>
+
+        
+    </div>
+
+</div>
+
+
+            
+    
+    
+    
+    
+<script src="/etc.clientlibs/core/wcm/components/commons/site/clientlibs/container.lc-0a6aff292f5cc42142779cde92054524-lc.min.js"></script>
+<script src="/etc.clientlibs/b2c/clientlibs/core.lc-c1d1da68926c0fee0d8aa105997297f4-lc.min.js"></script>
+
+
+
+
+    
+    
+
+
+
+
+
+    <div class="cloudservice testandtarget"></div>
+
+
+    
+
+    
+    
+    
+    
+
+        
+    </body>
+</html>

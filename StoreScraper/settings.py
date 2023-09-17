@@ -12,6 +12,8 @@ BOT_NAME = "StoreScraper"
 SPIDER_MODULES = ["StoreScraper.spiders"]
 NEWSPIDER_MODULE = "StoreScraper.spiders"
 
+DATA_FILE = 'store_data.jsonl'
+EXCEL_FILE = 'stores.xlsx'
 
 DOWNLOAD_TIMEOUT = 60
 
@@ -20,14 +22,14 @@ DOWNLOAD_DELAY = 1
 CONCURRENT_REQUESTS = 50
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
 
-LOGSTATS_INTERVAL = 10
+LOGSTATS_INTERVAL = 3
 LOG_LEVEL = 'INFO'
 LOG_SHORT_NAMES = False
 STATS_DUMP = True
 
 COOKIES_ENABLED = False
 
-HTTPPROXY_ENABLED = True
+HTTPPROXY_ENABLED = False
 HTTP_PROXY = 'http://127.0.0.1:8888'
 
 TELNETCONSOLE_ENABLED = False
@@ -49,19 +51,18 @@ DEFAULT_REQUEST_HEADERS = {
 }
 
 DOWNLOADER_MIDDLEWARES = {
-    "RecorderScraper.middlewares.CustomProxyMiddleware": 100,
-    "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": 101,
+    "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": 100,
 }
 
 FEEDS = {
-    'store_data.jsonl': {
+    DATA_FILE: {
         'format': 'jsonlines',
-        'overwrite': True,
+        'overwrite': False,
         'encoding': 'utf8'
     }
 }
 
-HTTPCACHE_ENABLED = False
+HTTPCACHE_ENABLED = True
 HTTPCACHE_EXPIRATION_SECS = 0
 HTTPCACHE_DIR = "httpcache"
 HTTPCACHE_IGNORE_HTTP_CODES = [500]
