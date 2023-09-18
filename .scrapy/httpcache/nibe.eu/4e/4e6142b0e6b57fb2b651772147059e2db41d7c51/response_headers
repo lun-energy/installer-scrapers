@@ -1,0 +1,19 @@
+Date: Sun, 17 Sep 2023 16:52:12 GMT
+Content-Type: text/html;charset=UTF-8
+Set-Cookie: JSESSIONID=913B31FF2C04FDCFF6B10A36DBA98BED; Path=/; Secure; HttpOnly; SameSite=None
+Set-Cookie: NSC_AfspDPPLJFJOTFSU=ffffffff09089e2e45525d5f4f58455e445a4a423660;path=/;httponly
+Content-Security-Policy: upgrade-insecure-requests;
+Referrer-Policy: no-referrer
+Strict-Transport-Security: max-age=31536000
+X-Frame-Options: ALLOW-FROM https://nibededev.crm4.dynamics.com https://nibedetest.crm4.dynamics.com https://nibede.crm4.dynamics.com
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+P3P: CP="This is not a P3P policy!"
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Vary: accept-encoding
+Cf-Cache-Status: DYNAMIC
+Server: cloudflare
+Cf-Ray: 8082dbba2b4a3130-SOF
+Content-Encoding: gzip
