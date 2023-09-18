@@ -1,6 +1,8 @@
 import logging
+import math
 from abc import ABC
 
+import haversine
 import scrapy.core.scraper
 import scrapy.utils
 import scrapy.utils.misc
@@ -45,6 +47,25 @@ class BaseSpider(scrapy.Spider, ABC):
         for handler in logging.root.handlers:
             handler.formatter = NoTracebackFormatter(logging_format)
             handler.addFilter(ContentFilter())
+
+    @staticmethod
+    def calculate_coordinates(radius: int = 100, unit: haversine.Unit = haversine.Unit.KILOMETERS):
+        NW_COORDINATES = (55.1, 5.5)
+        NE_COORDINATES = (55.1, 15.5)
+        SW_COORDINATES = (47.2, 5.5)
+        SE_COORDINATES = (47.2, 15.5)
+
+        NW_NE_DISTANCE = math.ceil(haversine.haversine(NW_COORDINATES, NE_COORDINATES, unit=unit))
+        NW_SW_DISTANCE = math.ceil(haversine.haversine(NW_COORDINATES, SW_COORDINATES, unit=unit))
+        result_coordinates = []
+        for h_distance in range(0, NW_SW_DISTANCE, radius):
+            start_coordinates = haversine.inverse_haversine(NW_COORDINATES, h_distance, haversine.Direction.SOUTH)
+            for w_distance in range(0, NW_NE_DISTANCE, radius):
+                new_coordinates = haversine.inverse_haversine(start_coordinates, w_distance, haversine.Direction.EAST)
+                result_coordinates.append(new_coordinates)
+                # print(f'{new_coordinates[0]},{new_coordinates[1]},')
+
+        return result_coordinates
 
 
 class ContentFilter(logging.Filter):

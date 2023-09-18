@@ -2,20 +2,20 @@ import logging
 import os
 from os.path import exists
 
+from colorama import Fore, Style, init
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.log import configure_logging
 from scrapy.utils.project import get_project_settings
 
-from StoreScraper.spiders import DaikinSpider, WeishauptSpider, BuderusSpider
+from StoreScraper.spiders import PanasonicSpider, DaikinSpider, WeishauptSpider, BuderusSpider, WolfSpider, NibeSpider
 from excel_exporter import excel_exporter
-
-from colorama import Fore, Back, Style, init
 
 logger = logging.getLogger(__name__)
 
 
 def main():
     init()
+
     # os.environ.setdefault('SCRAPY_SETTINGS_MODULE', 'settings')
 
     settings = get_project_settings()
@@ -37,6 +37,9 @@ def main():
     process.crawl(DaikinSpider)
     process.crawl(WeishauptSpider)
     process.crawl(BuderusSpider)
+    process.crawl(WolfSpider)
+    process.crawl(NibeSpider)
+    process.crawl(PanasonicSpider)
 
     process.start(install_signal_handlers=True)
 

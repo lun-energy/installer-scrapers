@@ -3,3 +3,4 @@ openpyxl==3.1.2
 pandas==2.0.3
 Twisted==22.10.0
 Scrapy==2.10.0
+haversine
