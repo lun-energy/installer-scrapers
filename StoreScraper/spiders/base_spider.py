@@ -72,7 +72,10 @@ class BaseSpider(scrapy.Spider, ABC):
     def parse_address(input_string: str) -> tuple[str, str, str]:
         address_parts = input_string.split(',')
         street = address_parts[0:-1][0]
-        postal_code = re.search('\\d+', address_parts[-1]).group(0)
+        postal_code_match = re.search('\\d+', address_parts[-1])
+        if postal_code_match is None:
+            pass
+        postal_code = postal_code_match.group(0) if postal_code_match else ''
         city = address_parts[-1].replace(postal_code, '')
         return street.strip(), postal_code.strip(), city.strip()
 
