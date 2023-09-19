@@ -7,7 +7,7 @@ from scrapy.crawler import CrawlerProcess
 from scrapy.utils.log import configure_logging
 from scrapy.utils.project import get_project_settings
 
-from StoreScraper.spiders import PanasonicSpider, DaikinSpider, WeishauptSpider, BuderusSpider, WolfSpider, NibeSpider
+from StoreScraper.spiders import PanasonicSpider, DaikinSpider, WeishauptSpider, BuderusSpider, WolfSpider, NibeSpider, BoschSpider, ViessmannSpider, VaillantSpider
 from excel_exporter import excel_exporter
 
 logger = logging.getLogger(__name__)
@@ -40,6 +40,9 @@ def main():
     process.crawl(WolfSpider)
     process.crawl(NibeSpider)
     process.crawl(PanasonicSpider)
+    process.crawl(BoschSpider)
+    process.crawl(ViessmannSpider)
+    process.crawl(VaillantSpider)
 
     process.start(install_signal_handlers=True)
 

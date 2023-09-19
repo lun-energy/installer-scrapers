@@ -65,7 +65,7 @@ FEEDS = {
 HTTPCACHE_ENABLED = True
 HTTPCACHE_EXPIRATION_SECS = 0
 HTTPCACHE_DIR = "httpcache"
-HTTPCACHE_IGNORE_HTTP_CODES = [500]
+HTTPCACHE_IGNORE_HTTP_CODES = [400, 401, 402, 403, 405, 406, 407, 408, 429, 500, 501, 502, 503, 504]
 HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Set settings whose default value is deprecated to a future-proof value

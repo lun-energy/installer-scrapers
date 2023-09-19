@@ -10,3 +10,6 @@ from .wolf_spider import WolfSpider
 from .nibe_spider import NibeSpider
 from .panasonic_spider import PanasonicSpider
 from .base_spider import BaseSpider
+from .bosch_spider import BoschSpider
+from .viessmann_spider import ViessmannSpider
+from .vaillant_spider import VaillantSpider
