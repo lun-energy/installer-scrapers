@@ -1,14 +1,14 @@
+Content-Length: 7685757
 Content-Type: application/json
 Vary: Accept-Encoding
 Cache-Control: max-age=0, must-revalidate, private
-Date: Sun, 17 Sep 2023 15:34:36 GMT
+Date: Tue, 19 Sep 2023 06:21:25 GMT
 X-Powered-By: pimcore
 Content-Language: de
-Expires: Sun, 17 Sep 2023 15:34:36 GMT
+Expires: Tue, 19 Sep 2023 06:21:25 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Referrer-Policy: same-origin
 X-Content-Type-Options: nosniff
 X-Frame-Options: SAMEORIGIN
 X-Permitted-Cross-Domain-Policies: none
 X-Xss-Protection: 1; mode=block
-Content-Encoding: gzip

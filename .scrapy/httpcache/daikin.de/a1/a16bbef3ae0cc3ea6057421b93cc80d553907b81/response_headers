@@ -5,8 +5,8 @@ X-Content-Type-Options: nosniff
 Accept-Ranges: bytes
 X-Vhost: daikin.de
 Content-Type: text/html;charset=utf-8
-Set-Cookie: affinity="4f29bfd0fa565a60"; Path=/; HttpOnly
-Date: Sun, 17 Sep 2023 08:42:50 GMT
-X-Served-By: cache-sof1510030-SOF
+Set-Cookie: affinity="7628aa9571ddcb73"; Path=/; HttpOnly
+Date: Tue, 19 Sep 2023 06:23:09 GMT
+X-Served-By: cache-sof1510029-SOF
 X-Cache: MISS
-X-Timer: S1694940170.813816,VS0,VS0,VE200
+X-Timer: S1695104589.438540,VS0,VS0,VE392

@@ -2,14 +2,14 @@ Content-Length: 68245
 Strict-Transport-Security: max-age=63072000; includeSubdomains
 X-Frame-Options: SAMEORIGIN
 Cache-Control: max-age=300, public
-Expires: Sun, 17 Sep 2023 08:51:16 GMT
+Expires: Tue, 19 Sep 2023 06:31:33 GMT
 X-Vhost: daikin.de
 Content-Type: text/html;charset=utf-8
-Set-Cookie: affinity="727a8c37ca195076"; Path=/; HttpOnly
+Set-Cookie: affinity="cce2ac10cac298e0"; Path=/; HttpOnly
 X-Content-Type-Options: nosniff
 Accept-Ranges: bytes
-Date: Sun, 17 Sep 2023 08:46:17 GMT
+Date: Tue, 19 Sep 2023 06:26:33 GMT
 Age: 0
-X-Served-By: cache-sof1510030-SOF
+X-Served-By: cache-sof1510029-SOF
 X-Cache: MISS
-X-Timer: S1694940377.898617,VS0,VS0,VE667
+X-Timer: S1695104793.096933,VS0,VS0,VE879

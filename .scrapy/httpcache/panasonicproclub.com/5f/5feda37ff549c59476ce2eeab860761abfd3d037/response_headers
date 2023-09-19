@@ -1,12 +1,12 @@
+Content-Length: 513061
 X-Xss-Protection: 1
 Vary: Accept-Encoding
-Content-Encoding: gzip
 X-Frame-Options: SAMEORIGIN
 Content-Type: text/html; charset=UTF-8
-Expires: Sun, 17 Sep 2023 17:41:04 GMT
+Expires: Tue, 19 Sep 2023 06:21:23 GMT
 Cache-Control: max-age=0, no-cache
 Pragma: no-cache
-Date: Sun, 17 Sep 2023 17:41:04 GMT
-Set-Cookie: PHPSESSID=s5f6evvv8u0vg90ih6ncq9g941; path=/; HttpOnly
-Set-Cookie: PHPSESSID=s5f6evvv8u0vg90ih6ncq9g941; path=/; secure
+Date: Tue, 19 Sep 2023 06:21:23 GMT
+Set-Cookie: PHPSESSID=e6uhf9efreh5h99drbemh0jmo7; path=/; HttpOnly
+Set-Cookie: PHPSESSID=e6uhf9efreh5h99drbemh0jmo7; path=/; secure
 Strict-Transport-Security: max-age=86400 ; includeSubDomains

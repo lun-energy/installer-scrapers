@@ -5,10 +5,10 @@ X-Frame-Options: SAMEORIGIN
 X-Sky-Isauth: 0
 X-Vhost: daikin.de
 Content-Type: application/json;charset=utf-8
-Set-Cookie: affinity="8e5d938c3ac4ec5b"; Path=/; HttpOnly
+Set-Cookie: affinity="b84593d7a6b80b71"; Path=/; HttpOnly
 X-Content-Type-Options: nosniff
 Accept-Ranges: bytes
-Date: Sun, 17 Sep 2023 08:31:21 GMT
-X-Served-By: cache-sof1510034-SOF
+Date: Tue, 19 Sep 2023 06:21:23 GMT
+X-Served-By: cache-sof1510029-SOF
 X-Cache: MISS
-X-Timer: S1694939481.361716,VS0,VS0,VE417
+X-Timer: S1695104483.345574,VS0,VS0,VE553

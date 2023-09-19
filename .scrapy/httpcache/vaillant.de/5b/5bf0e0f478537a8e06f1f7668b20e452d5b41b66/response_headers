@@ -1,0 +1,20 @@
+Content-Length: 495458
+Content-Type: text/html;charset=UTF-8
+Content-Language: de-DE
+Vary: Accept-Encoding
+Cache-Control: max-age=0
+Expires: Tue, 19 Sep 2023 06:21:44 GMT
+X-Served-By: app3
+X-Ua-Compatible: IE=edge
+Date: Tue, 19 Sep 2023 06:21:45 GMT
+Set-Cookie: JSESSIONID=E0FB81DB5B7E34919BA1D87B24089CE6; Path=/; HttpOnly
+Set-Cookie: VAILLANT-STICKY-CRYPT-ALWAYS=!ZQbNdq2hd+sLfypwqsVLJeZg7i506gXXFS9kT+hKh8XLDkSFGR8xxBr73QHAzwp7B1jY5RuiMixC5CKgRjAF7EbeH/G37W+anPQGJ8YiZYv0; path=/; Httponly; Secure
+Set-Cookie: TS0108515e=01e5b3f1f85fd241911a26d382be5431c8cc477dd107c7ab32295a01386624e6ea20c3e299f3149079fb5a1318edde342bd55c10d6; Path=/; Secure; HTTPOnly
+Set-Cookie: TS3b9b8813027=088b150524ab20000c060ff1024d1810e320b7dbeed800a14eeb661187a9ec03752867b4edd9232f086f762cf2113000f8751a5cf57a8e8a0dffff28824240bed4e475c1e8571839c898e59644d510cb1dde218025d6325b20ce9c6409a60d89; Path=/
+Feature-Policy: camera 'none'
+Referrer-Policy: no-referrer-when-downgrade
+X-Content-Type-Options: nosniff
+Content-Security-Policy: upgrade-insecure-requests
+Content-Security-Policy: block-all-mixed-content
+Strict-Transport-Security: max-age=63072000; preload
+X-Frame-Options: SAMEORIGIN
