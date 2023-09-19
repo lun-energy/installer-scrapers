@@ -16,6 +16,12 @@ def format_whitespaces(input_string: str) -> str:
     return re.sub('\s+', ' ', input_string).strip()
 
 
+def format_phone(input_string: str) -> str:
+    if input_string.lower().startswith('tel:'):
+        return str(input_string[4:])
+    return input_string
+
+
 class StoreItem(scrapy.Item):
     Source = Field(input_processor=MapCompose(format_whitespaces), output_processor=TakeFirst())
     Name1 = Field(input_processor=MapCompose(format_whitespaces), output_processor=TakeFirst())
@@ -24,7 +30,7 @@ class StoreItem(scrapy.Item):
     City = Field(input_processor=MapCompose(format_whitespaces), output_processor=TakeFirst())
     Zip = Field(input_processor=MapCompose(format_whitespaces), output_processor=TakeFirst())
     Email = Field(input_processor=MapCompose(format_whitespaces), output_processor=TakeFirst())
-    Phone = Field(input_processor=MapCompose(format_whitespaces), output_processor=TakeFirst())
+    Phone = Field(input_processor=MapCompose(format_whitespaces, format_phone), output_processor=TakeFirst())
     Website = Field(input_processor=MapCompose(format_whitespaces), output_processor=TakeFirst())
     Latitude = Field(input_processor=MapCompose(format_whitespaces), output_processor=TakeFirst())
     Longitude = Field(input_processor=MapCompose(format_whitespaces), output_processor=TakeFirst())

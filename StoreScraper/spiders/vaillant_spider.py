@@ -1,4 +1,3 @@
-import re
 from urllib.parse import urlencode
 
 from haversine import inverse_haversine, Direction
@@ -44,13 +43,12 @@ class VaillantSpider(base_spider.BaseSpider):
             item_loader.add_xpath('Longitude', '@data-partnersearch-lng')
 
             address = result.xpath('.//div[@data-partnersearch-address]/text()').get()
-            address_parts = address.split(',')
-            if len(address_parts) == 2:
-                item_loader.add_value('Address', address_parts[0])
-                postal_code = re.search('\\d+', address_parts[1]).group(0)
-                city = address_parts[1].replace(postal_code, '')
-                item_loader.add_value('City', city)
-                item_loader.add_value('Zip', postal_code)
+
+            street, postal_code, city = self.parse_address(address)
+
+            item_loader.add_value('Address', street)
+            item_loader.add_value('City', city)
+            item_loader.add_value('Zip', postal_code)
 
             parsed_result = item_loader.load_item()
             yield parsed_result

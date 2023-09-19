@@ -14,3 +14,4 @@ from .bosch_spider import BoschSpider
 from .viessmann_spider import ViessmannSpider
 from .vaillant_spider import VaillantSpider
 from .alpha_innotec_spider import AlphaInnotecSpider
+from .waermepumpe_spider import WaermepumpeSpider

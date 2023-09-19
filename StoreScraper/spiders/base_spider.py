@@ -1,5 +1,6 @@
 import logging
 import math
+import re
 from abc import ABC
 
 import haversine
@@ -66,6 +67,14 @@ class BaseSpider(scrapy.Spider, ABC):
                 # print(f'{new_coordinates[0]},{new_coordinates[1]},')
 
         return result_coordinates
+
+    @staticmethod
+    def parse_address(input_string: str) -> tuple[str, str, str]:
+        address_parts = input_string.split(',')
+        street = address_parts[0:-1][0]
+        postal_code = re.search('\\d+', address_parts[-1]).group(0)
+        city = address_parts[-1].replace(postal_code, '')
+        return street.strip(), postal_code.strip(), city.strip()
 
 
 class ContentFilter(logging.Filter):

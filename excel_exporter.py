@@ -13,7 +13,8 @@ logger = logging.getLogger(__name__)
 def auto_fit_columns(worksheet: Worksheet):
     for column_cells in worksheet.columns:
         max_length = max(len(str(cell.value)) for cell in column_cells)
-        worksheet.column_dimensions[column_cells[0].column_letter].width = max_length
+        min_length = len(column_cells[0].value) + 5
+        worksheet.column_dimensions[column_cells[0].column_letter].width = max(min_length, max_length)
 
 
 def set_table_style(worksheet: Worksheet, table_name: str, table_style: str = 'TableStyleLight16'):
