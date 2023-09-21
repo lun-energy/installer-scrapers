@@ -28,7 +28,7 @@ class PanasonicSpider(base_spider.BaseSpider):
         for row_index, column_index, value in values:
             if row_index not in results:
                 results[row_index] = {
-                    'Source': 'https://www.panasonicproclub.com/ifinder/DE_de/home/'
+                    'Source': self.name
                 }
             if column_index == '0':
                 results[row_index]['Name1'] = value
@@ -50,4 +50,4 @@ class PanasonicSpider(base_spider.BaseSpider):
                 results[row_index]['Longitude'] = value
         for key, value in results.items():
             parsed_result = StoreItem(**value)
-            yield parsed_result
+            yield self.add_unique_address_id(parsed_result)

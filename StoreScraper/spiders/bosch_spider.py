@@ -30,7 +30,7 @@ class BoschSpider(base_spider.BaseSpider):
     def parse(self, response: Response, **kwargs):
         for result in response.jmespath('[*]'):
             item_loader = ItemLoader(item=StoreItem(), selector=result)
-            item_loader.add_value('Source', 'https://www.bosch-homecomfort.com/de/de/wohngebaeude/service-und-support/installateur-finden/dealersearch/')
+
             item_loader.add_jmes('Name1', 'CompanyName')
             item_loader.add_jmes('Address', 'Address.Street')
             item_loader.add_jmes('City', 'Address.City')
@@ -42,4 +42,4 @@ class BoschSpider(base_spider.BaseSpider):
             item_loader.add_jmes('Longitude', 'Address.Longitude')
 
             parsed_result = item_loader.load_item()
-            yield parsed_result
+            yield self.add_unique_address_id(parsed_result)

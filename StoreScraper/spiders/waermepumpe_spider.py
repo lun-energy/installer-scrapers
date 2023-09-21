@@ -28,7 +28,6 @@ class WaermepumpeSpider(base_spider.BaseSpider):
     def parse(self, response: Response, **kwargs):
         for result in response.xpath('//div[@resultname]'):
             item_loader = ItemLoader(item=StoreItem(), selector=result)
-            item_loader.add_value('Source', 'https://www.waermepumpe.de/fachpartnersuche/fachpartner/')
             item_loader.add_xpath('Name1', '@resultname')
             item_loader.add_xpath('City', '@place')
             item_loader.add_xpath('Email', './/a[contains(@href, "mailto:")]/text()')
@@ -44,4 +43,4 @@ class WaermepumpeSpider(base_spider.BaseSpider):
             item_loader.add_value('Zip', postal_code)
 
             parsed_result = item_loader.load_item()
-            yield parsed_result
+            yield self.add_unique_address_id(parsed_result)

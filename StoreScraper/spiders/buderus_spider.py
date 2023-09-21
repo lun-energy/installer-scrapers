@@ -21,9 +21,7 @@ class BuderusSpider(base_spider.BaseSpider):
                 continue
 
             item_loader = ItemLoader(item=StoreItem(), selector=result)
-            item_loader.add_value('Source', 'https://www.buderus.de/de/services-tools/experten-in-ihrer-naehe/fachbetriebe-in-ihrer-naehe-21776')
             item_loader.add_jmes('Name1', 'LocationName')
-
             item_loader.add_jmes('Address', 'Address.Address1')
             item_loader.add_jmes('City', 'Address.City')
             item_loader.add_jmes('Zip', 'Address.PostalCode')
@@ -41,4 +39,4 @@ class BuderusSpider(base_spider.BaseSpider):
                     item_loader.add_value('Website', item_value)
 
             parsed_result = item_loader.load_item()
-            yield parsed_result
+            yield self.add_unique_address_id(parsed_result)

@@ -31,10 +31,8 @@ class VaillantSpider(base_spider.BaseSpider):
             yield Request(url='https://www.vaillant.de/heizung/heizung-finden/partner-finden/?' + urlencode(params))
 
     def parse(self, response: Response, **kwargs):
-
         for result in response.xpath('//div[@data-partnersearch-id]'):
             item_loader = ItemLoader(item=StoreItem(), selector=result)
-            item_loader.add_value('Source', 'https://www.vaillant.de/heizung/heizung-finden/partner-finden/?qualifications=1004')
             item_loader.add_xpath('Name1', './/h3[@data-partnersearch-company]/text()')
             item_loader.add_xpath('Email', './/li[@data-partnersearch-email]//text()')
             item_loader.add_xpath('Website', './/li[@data-partnersearch-website]//text()')
@@ -43,7 +41,6 @@ class VaillantSpider(base_spider.BaseSpider):
             item_loader.add_xpath('Longitude', '@data-partnersearch-lng')
 
             address = result.xpath('.//div[@data-partnersearch-address]/text()').get()
-
             street, postal_code, city = self.parse_address(address)
 
             item_loader.add_value('Address', street)
@@ -51,4 +48,4 @@ class VaillantSpider(base_spider.BaseSpider):
             item_loader.add_value('Zip', postal_code)
 
             parsed_result = item_loader.load_item()
-            yield parsed_result
+            yield self.add_unique_address_id(parsed_result)

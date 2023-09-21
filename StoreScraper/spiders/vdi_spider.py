@@ -21,7 +21,6 @@ class VdiSpider(base_spider.BaseSpider):
         for result in response.xpath('//td[normalize-space(@class)="company"]'):
 
             item_loader = ItemLoader(item=StoreItem(), selector=result)
-            item_loader.add_value('Source', 'https://www.vdi-sachkundiger-waermepumpe.de/')
             item_loader.add_xpath('Name1', 'a/text()')
 
             address_parts = [n.xpath('text()').get(default='') for n in result.xpath('div[normalize-space(@class)="company-address"]/div')]
@@ -32,9 +31,8 @@ class VdiSpider(base_spider.BaseSpider):
             item_loader.add_value('City', city)
             parsed_item = item_loader.load_item()
 
-            if parsed_item.get('Name1') is None or parsed_item.get('Address') is None:
-                continue
-            yield parsed_item
+            parsed_result = item_loader.load_item()
+            yield self.add_unique_address_id(parsed_result)
 
         query_parameters = parse_qs(urlparse(response.url).query)
         current_page = int(query_parameters['tx_bwpvdiwp_database[page]'][0])

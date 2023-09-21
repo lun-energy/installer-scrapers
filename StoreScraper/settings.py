@@ -14,6 +14,10 @@ NEWSPIDER_MODULE = "StoreScraper.spiders"
 
 DATA_FILE = 'store_data.jsonl'
 EXCEL_FILE = 'stores.xlsx'
+GROUPED_FILE = 'grouped_stores.xlsx'
+
+# you have to add your own mapbox key, it is free up to 100k requests monthly
+MAPBOX_API_KEY = ''
 
 DOWNLOAD_TIMEOUT = 60
 
@@ -22,7 +26,7 @@ DOWNLOAD_DELAY = 1
 CONCURRENT_REQUESTS = 50
 CONCURRENT_REQUESTS_PER_DOMAIN = 1
 
-LOGSTATS_INTERVAL = 3
+LOGSTATS_INTERVAL = 30
 LOG_LEVEL = 'INFO'
 LOG_SHORT_NAMES = False
 STATS_DUMP = True
@@ -52,6 +56,10 @@ DEFAULT_REQUEST_HEADERS = {
 
 DOWNLOADER_MIDDLEWARES = {
     "scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware": 100,
+}
+
+ITEM_PIPELINES = {
+    "StoreScraper.pipelines.StoreScraperPipeline": 300,
 }
 
 FEEDS = {

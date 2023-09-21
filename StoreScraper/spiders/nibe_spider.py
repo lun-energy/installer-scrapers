@@ -18,7 +18,6 @@ class NibeSpider(base_spider.BaseSpider):
         json_selector = Selector(text=json_data)
         for result in json_selector.jmespath('[*]'):
             item_loader = ItemLoader(item=StoreItem(), selector=result)
-            item_loader.add_value('Source', 'https://www.nibe.eu/de-de/suchen--finden/nibe-partner-finden')
 
             item_loader.add_jmes('Name1', 'name')
             item_loader.add_jmes('Name2', 'name2')
@@ -35,4 +34,4 @@ class NibeSpider(base_spider.BaseSpider):
                 item_loader.add_value('Longitude', geocode[1])
 
             parsed_result = item_loader.load_item()
-            yield parsed_result
+            yield self.add_unique_address_id(parsed_result)

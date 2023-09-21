@@ -1,10 +1,11 @@
-from scrapy import Request, FormRequest
+from urllib.parse import urlencode
+
+from scrapy import Request
 from scrapy.http import Response
 from scrapy.loader import ItemLoader
 
 from StoreScraper.items import StoreItem
 from StoreScraper.spiders import base_spider
-from urllib.parse import urlencode
 
 
 class ViessmannSpider(base_spider.BaseSpider):
@@ -26,7 +27,6 @@ class ViessmannSpider(base_spider.BaseSpider):
     def parse(self, response: Response, **kwargs):
         for result in response.jmespath('dealers[*]'):
             item_loader = ItemLoader(item=StoreItem(), selector=result)
-            item_loader.add_value('Source', 'https://www.viessmann.de/de/partner-vor-ort-suche.html')
             item_loader.add_jmes('Name1', 'name')
 
             item_loader.add_jmes('Address', 'address.street')
@@ -40,4 +40,4 @@ class ViessmannSpider(base_spider.BaseSpider):
             item_loader.add_jmes('Longitude', 'position.x')
 
             parsed_result = item_loader.load_item()
-            yield parsed_result
+            yield self.add_unique_address_id(parsed_result)

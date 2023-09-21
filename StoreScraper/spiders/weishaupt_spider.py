@@ -22,7 +22,6 @@ class WeishauptSpider(base_spider.BaseSpider):
     def parse(self, response: Response, **kwargs):
         for result in response.jmespath('companies[*]'):
             item_loader = ItemLoader(item=StoreItem(), selector=result)
-            item_loader.add_value('Source', 'https://www.weishaupt.de/kontakt/fachbetriebsfinder')
             item_loader.add_jmes('Name1', 'name1')
             item_loader.add_jmes('Name2', 'name2')
             item_loader.add_jmes('Address', 'address')
@@ -35,4 +34,4 @@ class WeishauptSpider(base_spider.BaseSpider):
             item_loader.add_jmes('Longitude', 'lng')
 
             parsed_result = item_loader.load_item()
-            yield parsed_result
+            yield self.add_unique_address_id(parsed_result)

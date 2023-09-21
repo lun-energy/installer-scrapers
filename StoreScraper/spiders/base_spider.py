@@ -2,11 +2,15 @@ import logging
 import math
 import re
 from abc import ABC
+from urllib.parse import quote
 
 import haversine
 import scrapy.core.scraper
 import scrapy.utils
 import scrapy.utils.misc
+from scrapy import Request
+from scrapy.http import Response
+from scrapy.utils.project import get_project_settings
 
 
 def warn_on_generator_with_return_value_stub(spider, callable):
@@ -25,9 +29,10 @@ class BaseSpider(scrapy.Spider, ABC):
         'Accept': 'application/json, text/javascript, */*; q=0.01'
     }
 
-    def __init__(self, **kwargs):
-        super().__init__(**kwargs)
+    def __init__(self, *args, **kwargs):
+        super(BaseSpider).__init__(*args, **kwargs)
         self.configure_logging_extended()
+        self.mapbox_api_key = get_project_settings().get('MAPBOX_API_KEY')
 
     @staticmethod
     def configure_logging_extended(logging_format: str = '%(asctime)s [%(name)s] %(levelname)s: %(message)s'):
@@ -78,6 +83,43 @@ class BaseSpider(scrapy.Spider, ABC):
         postal_code = postal_code_match.group(0) if postal_code_match else ''
         city = address_parts[-1].replace(postal_code, '')
         return street.strip(), postal_code.strip(), city.strip()
+
+    def add_unique_address_id(self, item):
+        """
+        Probably should have done it with a middleware, but this is fine as well.
+        :param item:
+        :return:
+        """
+        if not self.mapbox_api_key:
+            return item
+
+        if not item.get('Address'):
+            return item
+
+        address_parts = [
+            item.get('Address'),
+            item.get('City'),
+            item.get('Zip'),
+            'Germany'
+        ]
+
+        query = quote(','.join([a for a in address_parts if a]))
+
+        url = f'https://api.mapbox.com/geocoding/v5/mapbox.places/{query}.json?access_token={self.mapbox_api_key}'
+        return Request(url=url, callback=self.parse_mapbox_api, cb_kwargs={'item': item})
+
+    @staticmethod
+    def parse_mapbox_api(response: Response, **kwargs):
+        item = kwargs.get('item')
+
+        feature = response.jmespath('features[*]').getall()[0]
+        item['Longitude'] = item.get('Longitude') or feature['center'][0]
+        item['Latitude'] = item.get('Latitude') or feature['center'][1]
+
+        item['MapboxId'] = feature['id']
+        item['MapboxAddress'] = feature['place_name']
+
+        yield item
 
 
 class ContentFilter(logging.Filter):

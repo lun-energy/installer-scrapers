@@ -13,7 +13,6 @@ class WolfSpider(base_spider.BaseSpider):
     def parse(self, response: Response, **kwargs):
         for result in response.jmespath('data.partners[*]'):
             item_loader = ItemLoader(item=StoreItem(), selector=result)
-            item_loader.add_value('Source', 'https://www.wolf.eu/de-de/experte-finden#fhw-search-app')
             item_loader.add_jmes('Name1', 'name')
 
             item_loader.add_jmes('Address', 'address.address1')
@@ -25,4 +24,4 @@ class WolfSpider(base_spider.BaseSpider):
             item_loader.add_jmes('Longitude', 'address.lng')
 
             parsed_result = item_loader.load_item()
-            yield parsed_result
+            yield self.add_unique_address_id(parsed_result)
