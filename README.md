@@ -1,5 +1,10 @@
 # StoreScraper
 
+## EDIT
+You have to set the Mapbox API key in the settings.py file.
+It is at the top(MAPBOX_API_KEY)
+
+
 ## Installing Python
 1) Download and install Python<br/>
 	32-bit Windows:<br/>
