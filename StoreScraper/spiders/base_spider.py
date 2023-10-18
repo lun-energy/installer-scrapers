@@ -23,6 +23,7 @@ scrapy.core.scraper.warn_on_generator_with_return_value = warn_on_generator_with
 
 class BaseSpider(scrapy.Spider, ABC):
     name = 'base_spider'
+    country = 'DE'
 
     DEFAULT_AJAX_REQUEST_HEADER = {
         'X-Requested-With': 'XMLHttpRequest',
@@ -55,17 +56,14 @@ class BaseSpider(scrapy.Spider, ABC):
             handler.addFilter(ContentFilter())
 
     @staticmethod
-    def calculate_coordinates(radius: int = 100, unit: haversine.Unit = haversine.Unit.KILOMETERS):
-        NW_COORDINATES = (55.1, 5.5)
-        NE_COORDINATES = (55.1, 15.5)
-        SW_COORDINATES = (47.2, 5.5)
-        SE_COORDINATES = (47.2, 15.5)
+    def calculate_coordinates(radius: int = 100, unit: haversine.Unit = haversine.Unit.KILOMETERS, ne_coordinates=(55.1, 15.5), sw_coordinates=(47.2, 5.5)):
+        nw_coordinates = (ne_coordinates[0], sw_coordinates[1])
 
-        NW_NE_DISTANCE = math.ceil(haversine.haversine(NW_COORDINATES, NE_COORDINATES, unit=unit))
-        NW_SW_DISTANCE = math.ceil(haversine.haversine(NW_COORDINATES, SW_COORDINATES, unit=unit))
+        NW_NE_DISTANCE = math.ceil(haversine.haversine(nw_coordinates, ne_coordinates, unit=unit))
+        NW_SW_DISTANCE = math.ceil(haversine.haversine(nw_coordinates, sw_coordinates, unit=unit))
         result_coordinates = []
         for h_distance in range(0, NW_SW_DISTANCE, radius):
-            start_coordinates = haversine.inverse_haversine(NW_COORDINATES, h_distance, haversine.Direction.SOUTH)
+            start_coordinates = haversine.inverse_haversine(nw_coordinates, h_distance, haversine.Direction.SOUTH)
             for w_distance in range(0, NW_NE_DISTANCE, radius):
                 new_coordinates = haversine.inverse_haversine(start_coordinates, w_distance, haversine.Direction.EAST)
                 result_coordinates.append(new_coordinates)
@@ -96,13 +94,15 @@ class BaseSpider(scrapy.Spider, ABC):
         if not item.get('Address'):
             return item
 
+        country = 'Germany' if self.country == 'DE' else 'Denmark'
         address_parts = [
             item.get('Address'),
             item.get('City'),
             item.get('Zip'),
-            'Germany'
+            country
         ]
-
+        # TODO: get the address from lat/lng coordinates
+        # query = f'{item.get("Latitude")},{item.get("Longitude")}'
         query = quote(','.join([a for a in address_parts if a]))
 
         url = f'https://api.mapbox.com/geocoding/v5/mapbox.places/{query}.json?access_token={self.mapbox_api_key}'

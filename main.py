@@ -8,7 +8,7 @@ from scrapy.utils.log import configure_logging
 from scrapy.utils.project import get_project_settings
 
 from StoreScraper.spiders import PanasonicSpider, DaikinSpider, WeishauptSpider, BuderusSpider, WolfSpider, NibeSpider, BoschSpider, ViessmannSpider, VaillantSpider, AlphaInnotecSpider, WaermepumpeSpider, \
-    VdiSpider
+    VdiSpider, PanasonicDkSpider, DaikinDkSpider, VeinstallatoerDkSpider, ViessmannDkSpider, VaillantDkSpider, BoschDkSpider, DvienergiDkSpider, KinnanDkSpider
 from excel_exporter import excel_exporter, group_by_mapbox_id
 
 logger = logging.getLogger(__name__)
@@ -35,18 +35,29 @@ def main():
     # logging
     configure_logging()
 
-    process.crawl(DaikinSpider)
-    process.crawl(WeishauptSpider)
-    process.crawl(BuderusSpider)
-    process.crawl(WolfSpider)
-    process.crawl(NibeSpider)
-    process.crawl(PanasonicSpider)
-    process.crawl(BoschSpider)
-    process.crawl(ViessmannSpider)
-    process.crawl(VaillantSpider)
-    process.crawl(AlphaInnotecSpider)
-    process.crawl(WaermepumpeSpider)
-    process.crawl(VdiSpider)
+    ## GERMAN STORES
+    # process.crawl(DaikinSpider)
+    # process.crawl(WeishauptSpider)
+    # process.crawl(BuderusSpider)
+    # process.crawl(WolfSpider)
+    # process.crawl(NibeSpider)
+    # process.crawl(PanasonicSpider)
+    # process.crawl(BoschSpider)
+    # process.crawl(ViessmannSpider)
+    # process.crawl(VaillantSpider)
+    # process.crawl(AlphaInnotecSpider)
+    # process.crawl(WaermepumpeSpider)
+    # process.crawl(VdiSpider)
+
+    ## DENMARK STORES
+    process.crawl(PanasonicDkSpider)
+    process.crawl(DaikinDkSpider)
+    process.crawl(ViessmannDkSpider)
+    process.crawl(VaillantDkSpider)
+    process.crawl(VeinstallatoerDkSpider)
+    process.crawl(BoschDkSpider)
+    process.crawl(DvienergiDkSpider)
+    process.crawl(KinnanDkSpider)
 
     process.start(install_signal_handlers=True)
 

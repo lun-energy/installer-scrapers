@@ -16,3 +16,13 @@ from .vaillant_spider import VaillantSpider
 from .alpha_innotec_spider import AlphaInnotecSpider
 from .waermepumpe_spider import WaermepumpeSpider
 from .vdi_spider import VdiSpider
+from .panasonic_dk_spider import PanasonicDkSpider
+from .daikin_dk_spider import DaikinDkSpider
+from .veinstallatoer_dk_spider import VeinstallatoerDkSpider
+from .viessmann_dk_spider import ViessmannDkSpider
+from .vaillant_dk_spider import VaillantDkSpider
+from .bosch_dk_spider import BoschDkSpider
+from .dvienergi_spider import DvienergiDkSpider
+from .kinnan_dk_spider import KinnanDkSpider
+
+
