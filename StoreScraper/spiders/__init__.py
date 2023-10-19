@@ -24,5 +24,6 @@ from .vaillant_dk_spider import VaillantDkSpider
 from .bosch_dk_spider import BoschDkSpider
 from .dvienergi_spider import DvienergiDkSpider
 from .kinnan_dk_spider import KinnanDkSpider
+from .sparenergi_dk_spider import SparenergiDkSpider
 
 

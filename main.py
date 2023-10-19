@@ -8,7 +8,7 @@ from scrapy.utils.log import configure_logging
 from scrapy.utils.project import get_project_settings
 
 from StoreScraper.spiders import PanasonicSpider, DaikinSpider, WeishauptSpider, BuderusSpider, WolfSpider, NibeSpider, BoschSpider, ViessmannSpider, VaillantSpider, AlphaInnotecSpider, WaermepumpeSpider, \
-    VdiSpider, PanasonicDkSpider, DaikinDkSpider, VeinstallatoerDkSpider, ViessmannDkSpider, VaillantDkSpider, BoschDkSpider, DvienergiDkSpider, KinnanDkSpider
+    VdiSpider, PanasonicDkSpider, DaikinDkSpider, VeinstallatoerDkSpider, ViessmannDkSpider, VaillantDkSpider, BoschDkSpider, DvienergiDkSpider, KinnanDkSpider, SparenergiDkSpider
 from excel_exporter import excel_exporter, group_by_mapbox_id
 
 logger = logging.getLogger(__name__)
@@ -50,14 +50,17 @@ def main():
     # process.crawl(VdiSpider)
 
     ## DENMARK STORES
+    ## Veinstallatoer has no address
+
+    process.crawl(VeinstallatoerDkSpider)
     process.crawl(PanasonicDkSpider)
     process.crawl(DaikinDkSpider)
     process.crawl(ViessmannDkSpider)
     process.crawl(VaillantDkSpider)
-    process.crawl(VeinstallatoerDkSpider)
     process.crawl(BoschDkSpider)
     process.crawl(DvienergiDkSpider)
     process.crawl(KinnanDkSpider)
+    process.crawl(SparenergiDkSpider)
 
     process.start(install_signal_handlers=True)
 

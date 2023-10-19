@@ -71,16 +71,20 @@ class BaseSpider(scrapy.Spider, ABC):
 
         return result_coordinates
 
-    @staticmethod
-    def parse_address(input_string: str) -> tuple[str, str, str]:
-        address_parts = input_string.split(',')
-        street = address_parts[0:-1][0]
-        postal_code_match = re.search('\\d+', address_parts[-1])
-        if postal_code_match is None:
-            pass
-        postal_code = postal_code_match.group(0) if postal_code_match else ''
-        city = address_parts[-1].replace(postal_code, '')
-        return street.strip(), postal_code.strip(), city.strip()
+    def parse_address(self, input_string: str) -> tuple[str, str, str]:
+        try:
+            address_parts = input_string.split(',')
+            street = address_parts[0:-1][0]
+            postal_code_match = re.search('\\d+', address_parts[-1])
+            if postal_code_match is None:
+                pass
+            postal_code = postal_code_match.group(0) if postal_code_match else ''
+            city = address_parts[-1].replace(postal_code, '')
+            return street.strip(), postal_code.strip(), city.strip()
+
+        except Exception as ex:
+            self.logger.error('Error parsing address: %s', input_string)
+            return '', '', ''
 
     def add_unique_address_id(self, item):
         """
@@ -91,18 +95,24 @@ class BaseSpider(scrapy.Spider, ABC):
         if not self.mapbox_api_key:
             return item
 
-        if not item.get('Address'):
+        country = 'Germany' if self.country == 'DE' else 'Denmark'
+
+        if item.get('Address'):
+            address_parts = [
+                item.get('Address'),
+                item.get('City'),
+                item.get('Zip'),
+                country
+            ]
+        elif item.get('Latitude') and item.get('Longitude'):
+            address_parts = [
+                item.get('Longitude'),
+                item.get('Latitude'),
+            ]
+
+        else:
             return item
 
-        country = 'Germany' if self.country == 'DE' else 'Denmark'
-        address_parts = [
-            item.get('Address'),
-            item.get('City'),
-            item.get('Zip'),
-            country
-        ]
-        # TODO: get the address from lat/lng coordinates
-        # query = f'{item.get("Latitude")},{item.get("Longitude")}'
         query = quote(','.join([a for a in address_parts if a]))
 
         url = f'https://api.mapbox.com/geocoding/v5/mapbox.places/{query}.json?access_token={self.mapbox_api_key}'

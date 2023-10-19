@@ -25,10 +25,10 @@ class KinnanDkSpider(base_spider.BaseSpider):
             item_loader = ItemLoader(item=StoreItem(), selector=result)
 
             full_address = result['address'].replace(', Denmark', '')
-            street, postal_code, city = '', '', ''
-            try:
-                street, postal_code, city = self.parse_address(full_address)
-            except:
+
+            street, postal_code, city = self.parse_address(full_address)
+
+            if not street:
                 street = full_address
 
             postal_code = result['location']['postal_code'] if postal_code == '' else postal_code

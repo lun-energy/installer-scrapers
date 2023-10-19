@@ -31,7 +31,7 @@ class StoreScraperPipeline:
         if adapter.get('Name1') is None:
             raise DropItem(f'Missing Name1')
 
-        if adapter.get('Address') is None:
+        if adapter.get('Address') is None and (adapter.get('Latitude') is None or adapter.get('Longitude') is None):
             raise DropItem(f'Missing Address')
 
         if adapter.get('Email'):

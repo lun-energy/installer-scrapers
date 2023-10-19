@@ -26,5 +26,4 @@ class VeinstallatoerDkSpider(base_spider.BaseSpider):
             item_loader.add_xpath('Longitude', '@data-lng')
 
             parsed_result = item_loader.load_item()
-            parsed_result['Address'] = f'{parsed_result["Latitude"]},{parsed_result["Longitude"]}'
             yield self.add_unique_address_id(parsed_result)
